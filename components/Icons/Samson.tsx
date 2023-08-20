@@ -10,7 +10,7 @@ const Samson = () => {
       >
         <g
           id="svgGroup"
-          stroke-linecap="round"
+          strokeLinecap="round"
           fill-rule="evenodd"
           font-size="9pt"
           stroke="#000000"

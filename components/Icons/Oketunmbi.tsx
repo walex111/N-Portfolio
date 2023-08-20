@@ -1,8 +1,8 @@
 const Oketunmbi = () => {
   return (
-    <div className="mb-20">
+    <div className="mb-12">
       <svg
-        width="343.001"
+        width="300.4"
         height="72.001"
         viewBox="0 0 343.001 72.001"
         xmlns="http://www.w3.org/2000/svg"
@@ -10,7 +10,7 @@ const Oketunmbi = () => {
       >
         <g
           id="svgGroup"
-          stroke-linecap="round"
+          strokeLinecap="round"
           fill-rule="evenodd"
           font-size="9pt"
           stroke="#000000"
