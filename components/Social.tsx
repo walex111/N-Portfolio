@@ -4,7 +4,7 @@ import LinkedIn from "./Icons/Linkedin";
 
 const Social = () => {
   return (
-    <div className="flex items-center space-x-6">
+    <div className="flex flex-col justify-center items-center">
       <Link href="https://github.com/walex111" passHref>
         <a target="_blank">
           <Github />

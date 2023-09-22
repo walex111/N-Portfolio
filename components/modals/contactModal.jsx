@@ -1,4 +1,4 @@
-const Footer = () => {
+const ContactModal = () => {
     return (
         <div className="">
             <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
@@ -26,4 +26,4 @@ const Footer = () => {
     )
 }
 
-export default Footer
+export default ContactModal
