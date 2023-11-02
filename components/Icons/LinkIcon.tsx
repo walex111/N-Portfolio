@@ -1,4 +1,8 @@
-const LinkIcon = ({ classname }): any => {
+type SizeWH = {
+  classname: string;
+};
+
+const LinkIcon: React.FunctionComponent<SizeWH> = ({ classname }) => {
   return (
     <svg
       // className="w-6 h-6 text-pBlue"

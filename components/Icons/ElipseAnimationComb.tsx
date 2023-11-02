@@ -1,6 +1,12 @@
 import Circle from "./Circle";
 
-const ElipseAnimationComb = ({ classname }): any => {
+type SizeWH = {
+  classname: string;
+};
+
+const ElipseAnimationComb: React.FunctionComponent<SizeWH> = ({
+  classname,
+}) => {
   return (
     <div className={classname}>
       <div className="flex">

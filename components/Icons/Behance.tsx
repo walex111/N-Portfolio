@@ -1,4 +1,9 @@
-const Behance = ({ width, height }): any => {
+type SizeWH = {
+  width: string;
+  height: string;
+};
+
+const Behance: React.FunctionComponent<SizeWH> = ({ width, height }) => {
   return (
     <svg
       fill="#96DED1"

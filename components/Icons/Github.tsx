@@ -1,4 +1,9 @@
-const Github = ({ width, height }): any => {
+type SizeWH = {
+  width: string;
+  height: string;
+};
+
+const Github: React.FunctionComponent<SizeWH> = ({ width, height }) => {
   return (
     <svg
       fill="#96DED1"

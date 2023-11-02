@@ -1,4 +1,8 @@
-const Circle = ({ classname }): any => {
+type SizeWH = {
+  classname: string;
+};
+
+const Circle: React.FunctionComponent<SizeWH> = ({ classname }) => {
   return (
     <svg
       viewBox="0 0 100 100"

@@ -1,4 +1,9 @@
-const LinkedIn = ({ width, height }): any => {
+type SizeWH = {
+  width: string;
+  height: string;
+};
+
+const LinkedIn: React.FunctionComponent<SizeWH> = ({ width, height }) => {
   return (
     <svg
       fill="#96DED1"

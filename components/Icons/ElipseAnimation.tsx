@@ -1,4 +1,12 @@
-const ElipseAnimation = ({ height, width }): any => {
+type SizeWH = {
+  width: string;
+  height: string;
+};
+
+const ElipseAnimation: React.FunctionComponent<SizeWH> = ({
+  height,
+  width,
+}) => {
   return (
     <svg
       width={width}
