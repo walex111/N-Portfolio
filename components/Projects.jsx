@@ -176,9 +176,9 @@ const Projects = () => {
                                 image: "/images/v1-portfolio.png",
                                 links: {
                                     fullCode: "View Full Code",
-                                    fullCodeLink: "",
+                                    fullCodeLink: "https://v1samsonoketunmbi.netlify.app/",
                                 },
-                                projectType: "Samson Oketunmbi Portfolio (V!)",
+                                projectType: "Samson Oketunmbi Portfolio (V1)",
                                 projectDes: (
                                     <>
                                         <p>
