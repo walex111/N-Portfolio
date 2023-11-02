@@ -1,203 +1,249 @@
 import React, { useState } from "react";
+import { useRouter } from "next/router";
 import type { NextPage } from "next";
+import staticProps from "../staticProps";
+import { useTranslation } from "react-i18next";
+import {
+  motion,
+  useScroll,
+  useSpring,
+  useTransform,
+  MotionValue,
+} from "framer-motion";
 import Head from "next/head";
-import AboutModal from "../components/modals/aboutModal";
-import ContactModal from "../components/modals/ContactModal";
-import Social from "../components/Social";
+import Github from "../components/Icons/Github";
+import LinkedIn from "../components/Icons/Linkedin";
 import Link from "next/link";
-import Oketunmbi from "../components/Icons/Oketunmbi";
-import Samson from "../components/Icons/Samson";
-import ProjectsModal from "../components/modals/projectsModal";
-import Modal from "../components/modal";
+import ElipseAnimation from "../components/Icons/ElipseAnimation";
+import Circle from "../components/Icons/Circle";
+import ElipseAnimationComb from "../components/Icons/ElipseAnimationComb";
+import ExperienceModal from "../components/modals/experienceComp";
+import AboutTemplate from "../components/AboutTemplate";
+import Projects from "../components/Projects";
+import dynamic from "next/dynamic";
+import Social from "../components/Social";
+import LocaleMenu from "../components/LocaleMenu";
+import Behance from "../components/Icons/Behance";
 
-const keyPageRoute = [
-  {
-    key: "About",
-    pageRoute: `<${AboutModal}/>`,
-  },
-  {
-    key: "Contact",
-    pageRoute: `<${ContactModal}/>`,
-  },
-  {
-    key: "Portfolio Source Code",
-    pageRoute: "",
-  },
-  {
-    key: "Projects",
-    pageRoute: `<${ProjectsModal}/>`,
-  },
-];
+const NoSSR = dynamic(() => import("../components/no-ssr"), { ssr: false });
 
-const Home: NextPage = () => {
+const Home: NextPage = ({}) => {
+  const { t } = useTranslation("common");
+
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
+    const href = e.currentTarget.href;
+    const targetId = href.replace(/.*\#/, "");
+    const elem = document.getElementById(targetId);
+    elem?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
+  const router = useRouter();
+
   return (
-    <>
+    <NoSSR>
       <Head>
         <title>SAMSON OKETUNMBI</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="h-[100vh] w-[100vw] overflow-hidden mx-auto">
-        <div className="m-5">
-          <div className="h-[95vh] w-full border-[3.2px] rounded-sm border-neutral-600 p-3">
-            <div className="w-full h-full flex">
-              <div className="h-full font-oswald text-neutral-600 uppercase font-light tracking-wide flex justify-center items-center w-10">
-                <span className="whitespace-nowrap -rotate-90">
-                  <ul className="flex items-center justify-center">
-                    {keyPageRoute.map((kpr) => (
-                      <li className="mr-6 hover:font-normal cursor-pointer">
-                        <Link
-                          href={
-                            kpr.key === "Portfolio Source Code"
-                              ? ""
-                              : `/homepageModal/[homepageModal]?homepageModal=${kpr.key}`
-                          }
-                          as={kpr.key}
-                        >
-                          <a>{kpr.key}</a>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                  {/* <ul className="flex items-center justify-center">
-                    <li className="mr-6 hover:font-normal cursor-pointer">
-                      <Link href="" as={`/ContactModal`}>
-                        <a>Contact</a>
-                      </Link>
-                    </li>
-                    <li className="mr-6 hover:font-normal cursor-pointer">
-                      <Link href="">
-                        <a href="">Portfolio Source Code</a>
-                      </Link>
-                    </li>
-                    <li className="mr-6 hover:font-normal cursor-pointer">
-                      <Link href="" as={`/ProjectsModal`}>
-                        <a>Projects</a>
-                      </Link>
-                    </li>
-                    <li className="mr-6 hover:font-normal cursor-pointer">
-                      <Link href={`/modal/[homepageModal]?`} as={`/AboutModal`}>
-                        <a>About</a>
-                      </Link>
-                    </li>
-                  </ul> */}
+      <div className="h-screen w-full bg-darkc text-lightc text-opacity-70 relative">
+        <div className="overflow-hidden h-screen w-full">
+          <div className="flex h-full w-full text-sm">
+            <div className="w-14 h-full text-pBlue border-r border-b border-lightc border-opacity-10">
+              <LocaleMenu mainHeader="SO" />
+            </div>
+            <div className="hidden md:block w-12 h-full border-r border-b border-lightc border-opacity-10">
+              <div className="w-full h-full flex justify-center overflow-hidden text-pBlue">
+                <span className="-rotate-90 whitespace-nowrap flex space-x-10 font-cinzel">
+                  <button className="tracking-widest hover:underline underline-offset-2">
+                    <a
+                      target="_blank"
+                      href="https://github.com/walex111/N-Portfolio"
+                    >
+                      {t("navigation.psc")}
+                    </a>
+                  </button>
+                  <button className="tracking-widest hover:underline underline-offset-2">
+                    <Link href="#projects" onClick={handleScroll}>
+                      <a target="" href="">
+                        {t("navigation.projects")}
+                      </a>
+                    </Link>
+                  </button>
+                  <button className="tracking-widest hover:underline underline-offset-2">
+                    <Link href="#experience" onClick={handleScroll}>
+                      <a target="" href="">
+                        {t("navigation.exp")}
+                      </a>
+                    </Link>
+                  </button>
+                  <button className="tracking-widest hover:underline underline-offset-2">
+                    <Link href="#about" onClick={handleScroll}>
+                      <a target="" href="">
+                        {t("navigation.abt")}
+                      </a>
+                    </Link>
+                  </button>
                 </span>
               </div>
-              <div className="flex-1"></div>
-              <div className="w-10 flex flex-col justify-center space-y-[180px] items-center">
-                <div className="font-oswald text-neutral-600 uppercase font-light tracking-wide flex">
-                  <span className="whitespace-nowrap rotate-90">
-                    <p>I build products for the web.</p>
-                  </span>
+            </div>
+            <div className="md:w-80 md:h-[100%] md:border md:flex md:flex-col md:border-lightc md:border-opacity-10 font-cinzel">
+              <div className="hidden md:h-[60%] md:w-full md:flex flex-col justify-center items-center">
+                <ElipseAnimationComb classname="" />
+                <ElipseAnimationComb classname="" />
+              </div>
+              <div className="hidden md:flex justify-center items-center md:h-[10%] md:w-full border-t border-lightc border-opacity-10">
+                <button
+                  type="button"
+                  onClick={() => router.push("mailto:owale07@gmail.com")}
+                  className="h-full w-full tracking-widest hover:underline underline-offset-2 text-xs md:text-md text-pBlue"
+                >
+                  owale07@gmail.com
+                </button>
+              </div>
+              <div className="hidden md:flex flex-col space-y-5 justify-center items-center h-[30%] w-full border-t border-lightc border-opacity-10">
+                <Link href="https://github.com/walex111" passHref>
+                  <a className="hover:animate-spin" target="_blank">
+                    <Github width="60px" height="60px" />
+                  </a>
+                </Link>
+                <Link
+                  href="https://www.linkedin.com/in/samsonwaleoketunmbi/"
+                  passHref
+                >
+                  <a className="hover:animate-spin" target="_blank">
+                    <LinkedIn width="45px" height="45px" />
+                  </a>
+                </Link>
+                <Link href="https://www.behance.net/samsonoketunmbi" passHref>
+                  <a className="hover:animate-spin" target="_blank">
+                    <Behance width="45px" height="45px" />
+                  </a>
+                </Link>
+              </div>
+            </div>
+            <div className="w-full overflow-y-scroll">
+              <div className="h-[100%] border-b border-lightc border-opacity-10 flex-1 flex flex-col items-center font-cinzel">
+                <div className="h-[80%] w-full justify-center items-center flex flex-col pb-7">
+                  <div className="flex">
+                    <div className="space-y-1">
+                      <div className="w-32 h-32">
+                        <Circle classname={"motion-safe:animate-pulse"} />
+                      </div>
+                      <div className="hidden md:block">
+                        <ElipseAnimation width="135" height="135" />
+                      </div>
+                      <div className="block md:hidden">
+                        <ElipseAnimation width="135" height="135" />
+                      </div>
+                    </div>
+                    <div className="hidden md:block space-y-1">
+                      <div className="w-32 h-32">
+                        <Circle classname={"motion-safe:animate-pulse"} />
+                      </div>
+                      <div className="w-32 h-32">
+                        <Circle classname={"motion-safe:animate-pulse"} />
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <Social />
+                <div className="h-[20%] w-full flex justify-center items-center border-t border-lightc border-opacity-10">
+                  <AboutTemplate />
                 </div>
+              </div>
+              <div
+                id="about"
+                className="h-[100%] border-b border-lightc border-opacity-10 flex-1 flex flex-col items-center font-faunaOne tracking-widest"
+              >
+                <div className="h-full w-full justify-center items-center flex flex-col space-y-10 pb-7">
+                  <p className="text-xs md:text-md px-5 md:px-20 font-faunaOne">
+                    {t("scroll-2.paragrapg1")} a{" "}
+                    <span className="text-pBlue">
+                      <Link href="https://www.audreybakes.com/" passHref>
+                        <a
+                          className="hover:underline underline-offset-2"
+                          target="_blank"
+                        >
+                          {t("scroll-2.cta1")}
+                        </a>
+                      </Link>
+                    </span>{" "}
+                    a <span className="text-pBlue">{t("scroll-2.cta2")}</span>
+                    and an{" "}
+                    <span className="text-pBlue">{t("scroll-2.cta3")}</span>
+                    <p className="pt-2">
+                      {t("scroll-2.paragrapg2")}
+                      <span className="text-pBlue">
+                        <Link href="https://www.placewise.com/" passHref>
+                          <a
+                            className="hover:underline underline-offset-2"
+                            target="_blank"
+                          >
+                            {t("scroll-2.cta4")}
+                          </a>
+                        </Link>
+                      </span>
+                    </p>
+                  </p>
+                  <div className="flex self-start pl-2 md:hidden">
+                    <Social className="flex flex-row justify-center items-center" />
+                  </div>
+                </div>
+              </div>
+              <div
+                id="experience"
+                className="border-b border-lightc border-opacity-10 flex-1 flex flex-col items-center font-cinzel"
+              >
+                <div className="w-full justify-center items-center flex flex-col space-y-10 mb-10">
+                  <div className="px-5 md:px-20">
+                    <ExperienceModal />
+                  </div>
+                </div>
+              </div>
+              <div
+                id="projects"
+                className="border-b border-lightc border-opacity-10 flex-1 flex flex-col items-center font-faunaOne"
+              >
+                <div className="w-full justify-center items-center flex flex-col space-y-10 px-5 md:px-10">
+                  <Projects />
+                </div>
+              </div>
+              <div
+                id="projects"
+                className="h-[20%] border-b border-lightc border-opacity-10 flex-1 flex justify-center items-center font-faunaOne"
+              >
+                <p className="w-[80%] tracking-widest text-xs md:text-md">
+                  Designed in Figma and coded in{" "}
+                  <span className="text-lightc">Visual Studio Code</span> by
+                  yours truly. Built with{" "}
+                  <span className="text-lightc">Next.js</span>,{" "}
+                  <span className="text-lightc">Tailwind CSS</span>,{" "}
+                  <span className="text-lightc">Framer Motion</span> and
+                  deployed with <span className="text-lightc">Netlify</span>.
+                  Texts in <span className="text-lightc">Cinzel</span>,{" "}
+                  <span className="text-lightc">Fauna One</span> and{" "}
+                  <span className="text-lightc">Oswald</span>.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </NoSSR>
   );
-  //   <div className="">
-  //     <Head>
-  //       <title>SAMSON OKETUNMBI</title>
-  //       <link rel="icon" href="/favicon.ico" />
-  //     </Head>
-
-  //     <div className="h-full">
-  //       <div className="w-full h-28 flex justify-end px-20 sticky top-0 z-50">
-  //         <HamburgerMenu />
-  //       </div>
-  //       <div className="w-full px-20 py-10 md:px-60 lg:px-72">
-  //         <div className="mt-[25%]">
-  //           <Samson />
-  //           <Oketunmbi />
-  //         </div>
-  //         <div className="w-[85%] mb-20">
-  //           <p className="text-xl text-neutral-600 font-oswald text-left">
-  //             I am an experienced Front End Developer dedicated to crafting
-  //             immersive and visually stunning web experiences. With a strong
-  //             foundation in HTML, CSS, and JavaScript, I've successfully
-  //             transformed design concepts into seamless, responsive interfaces
-  //             that captivate users. My proficiency extends to modern frameworks
-  //             like React and Vue.js, enabling me to create dynamic and
-  //             interactive user interfaces. Throughout my career, I've embraced
-  //             the synergy of art and functionality, consistently pushing the
-  //             boundaries of creativity while ensuring optimal user experiences.
-  //             I am currently focusing on creating and maintaining Retail Real
-  //             Estate products at{" "}
-  //             <span className="text-rose-500 hover:text-rose-300">
-  //               <Link href="https://www.placewise.com/" passHref>
-  //                 <a target="_blank">Placewise LLC</a>
-  //               </Link>
-  //             </span>
-  //             .
-  //           </p>
-  //         </div>
-  //         <div>
-  //           <Social />
-  //         </div>
-  //       </div>
-  //       <div className="w-full px-20 py-10 md:px-60 lg:px-72">
-  //         <div className="w-full h-0.5 mb-40 bg-neutral-600"></div>
-  //         <h1 className="text-4xl font-bebas text-neutral-600 mb-10">
-  //           ABOUT ME
-  //         </h1>
-
-  //         <p className="text-xl text-neutral-600 font-oswald text-left mb-5">
-  //           Hello! My name is Samson and I love creating and designing things
-  //           for the web. I started in web development in 2018 when I decided to
-  //           pursue my dream career and I have been able to work for a startup
-  //           company and now for a{" "}
-  //           <span className="text-rose-500 hover:text-rose-300">
-  //             <Link href="https://www.placewise.com/" passHref>
-  //               <a target="_blank">Retail Real Estate Company</a>
-  //             </Link>
-  //           </span>
-  //           .
-  //         </p>
-  //         <p className="text-xl text-neutral-600 font-oswald text-left mb-5">
-  //           Here are few technologies I work with:
-  //         </p>
-
-  //         <div className="flex space-x-5 text-neutral-600 text-xl font-oswald text-left">
-  //           <div>
-  //             <p className="">- HTML5.</p>
-  //             <p className="">- Javascript.</p>
-  //             <p className="">- Typescript.</p>
-  //             <p className="">- GraphQl.</p>
-  //           </div>
-  //           <div>
-  //             <p className="">- Node Js.</p>
-  //             <p className="">- Python.</p>
-  //             <p className="">- Agile/Scrum.</p>
-  //           </div>
-  //           <div>
-  //             <p className="">- Object-Oriented Programming (OOP).</p>
-  //             <p className="">- Web Performance Optimization (WPO).</p>
-  //             <p className="">- Git Version Control.</p>
-  //             <p className="">- Dom Manipulation.</p>
-  //             <p className="">- SEO Principles.</p>
-  //           </div>
-  //         </div>
-  //       </div>
-  //       <div className="w-full px-20 py-10 md:px-60 lg:px-72">
-  //         <div className="w-full h-0.5 my-40 bg-neutral-600"></div>
-  //       </div>
-
-  //       <div className="w-full px-20 py-10 md:px-60 lg:px-72">
-  //         <Projects />
-  //       </div>
-
-  //       <div className="w-full py-10">
-  //         <div className="w-full h-0.5 mb-10 bg-neutral-600"></div>
-  //         <Footer />
-  //       </div>
-  //     </div>
-  //   </div>
-  // );
 };
 
 export default Home;
+
+export async function getStaticProps({ locale }: any) {
+  return {
+    props: await staticProps({
+      locale,
+      data: {},
+    }),
+    revalidate: 60,
+  };
+}

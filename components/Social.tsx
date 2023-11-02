@@ -1,18 +1,24 @@
 import Link from "next/link";
 import Github from "./Icons/Github";
 import LinkedIn from "./Icons/Linkedin";
+import Behance from "./Icons/Behance";
 
-const Social = () => {
+const Social = ({ className }): any => {
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className={className}>
       <Link href="https://github.com/walex111" passHref>
-        <a target="_blank">
-          <Github />
+        <a className="hover:animate-spin" target="_blank">
+          <Github width="60px" height="60px" />
         </a>
       </Link>
       <Link href="https://www.linkedin.com/in/samsonwaleoketunmbi/" passHref>
-        <a target="_blank">
-          <LinkedIn />
+        <a className="hover:animate-spin mr-2" target="_blank">
+          <LinkedIn width="45px" height="45px" />
+        </a>
+      </Link>
+      <Link href="https://www.behance.net/samsonoketunmbi" passHref>
+        <a className="hover:animate-spin" target="_blank">
+          <Behance width="45px" height="45px" />
         </a>
       </Link>
     </div>

@@ -1,0 +1,84 @@
+{
+  "language": {
+    "English": "EN",
+    "Spanish": "ESP"
+  },
+  "ctaR": "Ver currículum completo",
+  "ctaP": "Ver proyectos completos",
+  "navigation": {
+    "psc": "Código fuente de la cartera",
+    "projects": "Proyectos",
+    "exp": "Experiencia",
+    "abt": "Acerca de"
+  },
+  "scroll-1": {
+    "Heading": "SAMSON OKETUNMBI",
+    "Subheading": "DESARROLLADOR WEB FRONTAL",
+    "paragrapg": "Construyo aplicaciones para la web."
+  },
+  "scroll-2": {
+    "Heading": "ABOUT",
+    "paragrapg1": "En 2017, comencé a trabajar como autónomo en Long Island después de descubrir mi camino como desarrollador web ",
+    "paragrapg2": "Avance rápido hasta el día de hoy. Con una base sólida en React, CSS, JavaScript y Typecript, he transformado con éxito conceptos de diseño en interfaces fluidas y responsivas que cautivan a los usuarios. Mi dominio se extiende a marcos modernos como React y Vue.js, lo que me permite crear interfaces de usuario dinámicas e interactivas. A lo largo de mi carrera, he abrazado la sinergia entre el arte y la funcionalidad, superando constantemente los límites de la creatividad y al mismo tiempo garantizando experiencias de usuario óptimas. El último entorno de trabajo centrado en la creación y mantenimiento de productos inmobiliarios minoristas en ",
+    "cta1": "sitio web de una panadería (actualizado), ",
+    "cta2": "Sitio web de campaña política para un candidato (desactivado), ",
+    "cta3": "aplicación de gestión de eventos para un festival (cancelada).",
+    "cta4": "Placewise Group."
+  },
+  "scroll-3": {
+    "Heading": "EXPERIENCIA",
+    "exp-1": {
+      "duration": "NOV 2021 – JUN 2023",
+      "company": "DESARROLLADOR WEB - PLACEWISE GROUP",
+      "paragraph": "Ofrezca un código de producción sólido y de alta calidad para una amplia gama de proyectos para clientes, incluidas las propiedades Centennial y más. Proporcionar camaradería dentro del departamento de desarrollo a través de una estrecha colaboración y el intercambio de conocimientos.",
+      "projectLang": [
+        "React JS",
+        "Tailwind CSS",
+        "Javascript",
+        "Typescript",
+        "GraphQL"
+      ]
+    },
+    "exp-2": {
+      "duration": "MAR 2019 – OCT 2021",
+      "company": "DESARROLLADOR FRONTAL - ETHIX INCORPORATION",
+      "paragraph": "Desarrollé, mantuve y envié código de producción de un sitio web de comercio electrónico de nueva creación, empleando una amplia gama de tecnologías y prácticas modernas de front-end, es decir, pruebas A/B y optimización de imágenes para ofrecer experiencias de usuario atractivas, agilizar la navegación y optimizar el rendimiento. centrándose en la reutilización del código al 100% + composiciónComponente de árbol flexible.",
+      "projectLang": [
+        "React JS",
+        "Storybook",
+        "Javascript",
+        "Typescript",
+        "CSS"
+      ]
+    }
+  },
+  "scroll-4": {
+    "Heading": "PROYECTOS",
+    "p-1": {
+      "name": "TODO APPLICATION WITH REACT JS",
+      "paragraph": "APLICACIÓN TODO CON REACT JS",
+      "projectLang": [
+        "React JS",
+        "Storybook",
+        "Javascript",
+        "Typescript",
+        "CSS"
+      ]
+    },
+    "p-2": {
+      "name": "AIRBNB CLON REACCIONAR JS",
+      "paragraph": "Uso de React, React Router DOM, Hooks, State y preprocesador CSS (SCSS) para crear un clon de Airbnb.",
+      "projectLang": ["React JS", "Tailwind CSS", "Javascript", "Typescript"]
+    },
+    "p-3": {
+      "name": "AIRBNB CLON REACCIONAR JS",
+      "paragraph": "Uso de React, React Router DOM, Hooks, State y preprocesador CSS (SCSS) para crear un clon de Airbnb.",
+      "projectLang": ["React JS", "Tailwind CSS", "Javascript", "Typescript"]
+    },
+    "p-4": {
+      "name": "AIRBNB CLON REACCIONAR JS",
+      "paragraph": "Uso de React, React Router DOM, Hooks, State y preprocesador CSS (SCSS) para crear un clon de Airbnb.",
+      "projectLang": ["React JS", "Tailwind CSS", "Javascript", "Typescript"]
+    }
+  }
+}
