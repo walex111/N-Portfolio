@@ -1,6 +1,10 @@
 import React from "react";
 
-const nossr = ({ children }): any => {
+type SizeWH = {
+  children: any;
+};
+
+const nossr: React.FunctionComponent<SizeWH> = ({ children }) => {
   return <>{children}</>;
 };
 

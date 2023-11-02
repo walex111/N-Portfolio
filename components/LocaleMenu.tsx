@@ -3,7 +3,11 @@ import { useRouter } from "next/router";
 import { useTranslation } from "react-i18next";
 import Link from "next/link";
 
-const LocaleMenu = ({ mainHeader }) => {
+type SizeWH = {
+  mainHeader: string;
+};
+
+const LocaleMenu: React.FunctionComponent<SizeWH> = ({ mainHeader }) => {
   const router = useRouter();
   const { asPath, locale, locales } = router;
 

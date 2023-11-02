@@ -3,7 +3,11 @@ import Github from "./Icons/Github";
 import LinkedIn from "./Icons/Linkedin";
 import Behance from "./Icons/Behance";
 
-const Social = ({ className }): any => {
+type SizeWH = {
+  className: any;
+};
+
+const Social: React.FunctionComponent<SizeWH> = ({ className }) => {
   return (
     <div className={className}>
       <Link href="https://github.com/walex111" passHref>
