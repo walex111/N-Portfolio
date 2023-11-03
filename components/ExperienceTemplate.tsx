@@ -19,7 +19,7 @@ const ExperienceTemplate = ({ experienceContent }: any) => {
                   <h1 className="uppercase text-pBlue text-md font-medium mb-2">
                     {c.compantSite && (
                       <span className="text-pBlue">
-                        <Link href="https://www.placewise.com/" passHref>
+                        <Link href={c.compantSite} passHref>
                           <a
                             className="flex hover:underline underline-offset-2"
                             target="_blank"
