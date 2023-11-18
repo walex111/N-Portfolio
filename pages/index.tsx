@@ -45,7 +45,7 @@ const Home: NextPage = ({}) => {
   return (
     <NoSSR>
       <Head>
-        <title >Samson Oketunmbi</title>
+        <title>Samson Oketunmbi</title>
         <link
           rel="apple-touch-icon"
           sizes="180x180"

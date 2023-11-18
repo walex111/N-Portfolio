@@ -129,28 +129,6 @@ const Projects = () => {
                                 projectLang: ["React JS", "Javascript", "CSS"],
                             },
                             {
-                                image: "/images/Breaking Bad.png",
-                                links: {
-                                    fullCode: "View Full Code",
-                                    fullCodeLink: "https://gifted-payne-fc1943.netlify.app/",
-                                },
-                                projectType: "BREAKING BAD API",
-                                projectDes: (
-                                    <>
-                                        <p>
-                                            Utilized React, FetchAPI, and SCSS to develop an engaging
-                                            web application that presents characters from the renowned
-                                            show "Breaking Bad." Implemented a search feature for
-                                            seamless navigation and included captivating animations
-                                            for an enhanced user experience. Demonstrated the ability
-                                            to integrate external APIs and create visually appealing,
-                                            interactive web solutions.
-                                        </p>
-                                    </>
-                                ),
-                                projectLang: ["React JS", "Javascript", "CSS"],
-                            },
-                            {
                                 image: "/images/amexp.png",
                                 links: {
                                     fullCode: "View Full Code",
