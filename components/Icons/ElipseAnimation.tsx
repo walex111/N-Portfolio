@@ -1,11 +1,13 @@
 type SizeWH = {
   width: string;
   height: string;
+  classname: any;
 };
 
 const ElipseAnimation: React.FunctionComponent<SizeWH> = ({
   height,
   width,
+  classname
 }) => {
   return (
     <svg
@@ -16,7 +18,7 @@ const ElipseAnimation: React.FunctionComponent<SizeWH> = ({
       stroke="white"
       xmlns="http://www.w3.org/2000/svg"
       data-darkreader-inline-stroke=""
-      className="animate-pulse"
+      className={classname}
     >
       <g>
         <ellipse

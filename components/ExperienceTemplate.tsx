@@ -16,9 +16,9 @@ const ExperienceTemplate = ({ experienceContent }: any) => {
                   {c.duration}
                 </p>
                 <div className="lg:w-full">
-                  <h1 className="uppercase text-pBlue text-md font-medium mb-2">
+                  <h1 className="uppercase text-cBlue dark:text-pBlue text-md font-medium mb-2">
                     {c.compantSite && (
-                      <span className="text-pBlue">
+                      <span className="text-cBlue dark:text-pBlue">
                         <Link href={c.compantSite} passHref>
                           <a
                             className="flex hover:underline underline-offset-2"
@@ -31,7 +31,7 @@ const ExperienceTemplate = ({ experienceContent }: any) => {
                       </span>
                     )}
                     {!c.compantSite && (
-                      <span className="text-pBlue">{c.wTitle}</span>
+                      <span className="text-cBlue dark:text-pBlue">{c.wTitle}</span>
                     )}
                   </h1>
                   <p className="text-xs font-extralight tracking-widest md:text-md">

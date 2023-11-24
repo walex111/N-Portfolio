@@ -11,7 +11,7 @@ const ProjectsTemplate = ({ projectsContent }: any) => {
       <div className="font-faunaOne space-y-10 py-10">
         {projects.content.map((c: any) => {
           return (
-            <div className="hover:border border-pBlue border-opacity-10 p-4">
+            <div className="hover:border border-cBlue dark:border-pBlue border-opacity-40 dark:border-opacity-10 p-4">
               <Link className="" href={c.links.fullCodeLink}>
                 <a target="_blank" className="lg:flex lg:space-x-6">
                   <div className="hidden lg:flex h-24">
@@ -26,10 +26,10 @@ const ProjectsTemplate = ({ projectsContent }: any) => {
                   <div className="flex flex-col text-sm lg:w-full">
                     <div className="flex flex-col">
                       <div className="flex">
-                        <h1 className="text-md text-pBlue font-medium mb-2 mr-2 truncate">
+                        <h1 className="text-md text-cBlue dark:text-pBlue font-medium mb-2 mr-2 truncate">
                           {c.projectType}
                         </h1>
-                        <LinkIcon classname="w-3 self-start text-pBlue pt-[0.15rem]" />
+                        <LinkIcon classname="w-3 self-start text-cBlue dark:text-pBlue pt-[0.15rem]" />
                       </div>
                       <p className="text-xs md:text-md tracking-widest">
                         {c.projectDes}

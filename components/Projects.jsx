@@ -171,7 +171,7 @@ const Projects = () => {
                     },
                 }}
             />
-            <div className="flex items-center font-faunaOne text-xs md:text-md tracking-widest justify-center mt-8 pb-20 text-pBlue">
+            <div className="flex items-center font-faunaOne text-xs md:text-md tracking-widest justify-center mt-8 pb-20 text-cBlue dark:text-pBlue">
                 <Link href="/projectsFull">
                     <a className="hover:underline underline-offset-2">
                         View Full Project catalog

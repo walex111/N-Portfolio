@@ -8,8 +8,6 @@ const Circle: React.FunctionComponent<SizeWH> = ({ classname }) => {
       viewBox="0 0 100 100"
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
-      stroke="white"
-      data-darkreader-inline-stroke=""
       className={classname}
     >
       <path
@@ -22,5 +20,3 @@ const Circle: React.FunctionComponent<SizeWH> = ({ classname }) => {
 };
 
 export default Circle;
-
-("motion-safe:animate-bounce");

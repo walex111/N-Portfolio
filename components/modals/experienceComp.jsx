@@ -98,7 +98,7 @@ const ExperienceComp = () => {
                                                 <li>
                                                     <Link href="https://www.audreybakes.com/" passHref>
                                                         <a
-                                                            className="flex space-x-1 text-pBlue hover:underline underline-offset-2"
+                                                            className="flex space-x-1 text-cBlue dark:text-pBlue hover:underline underline-offset-2"
                                                             target="_blank"
                                                         >
                                                             Local Business Website for a Bakery (updated)
@@ -116,7 +116,7 @@ const ExperienceComp = () => {
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <div className="text-pBlue">
+                                                    <div className="text-cBlue dark:text-pBlue">
                                                         Political Campaign Website for Suffolk Council Candidate (deactivated):
                                                     </div>
                                                     <ul className="list-disc space-y-2 mt-2">
@@ -128,7 +128,7 @@ const ExperienceComp = () => {
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <div className="text-pBlue">
+                                                    <div className="text-cBlue dark:text-pBlue">
                                                         Event Management App for a Cultural Festival (canceled):
                                                     </div>
                                                     <ul className="list-disc space-y-2 mt-2">                                                        <li  ><span className="font-bold ">Description</span>: Design and build an app for managing schedules, ticket sales, and artist
@@ -147,7 +147,7 @@ const ExperienceComp = () => {
                     },
                 }}
             />
-            <div className="flex items-center justify-center my-5 text-xs md:text-md space-x-1 font-faunaOne text-pBlue tracking-widest">
+            <div className="flex items-center justify-center my-5 text-xs md:text-md space-x-1 font-faunaOne text-cBlue dark:text-pBlue tracking-widest">
                 <Link href="">
                     <a className="hover:underline underline-offset-2"
                         href="https://emerald-randy-29.tiiny.site"
