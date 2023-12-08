@@ -7,13 +7,13 @@ const ProjectsFullMTemplate = ({ projectsContent }: any) => {
 
   return (
     <>
-      <div className="font-faunaOne space-y-12 py-10 xl:p-48 overflow-scroll">
+      <div className="font-faunaOne space-y-12 pb-10 xl:p-48 overflow-scroll">
         <div className="w-auto flex flex-col">
           <div className="overflow-hidden">
-            <h1 className="w-full flex justify-center text-md md:text-2xl font-black tracking-wide uppercase mb-4">
+            <h1 className="w-full h-20 z-50 bg-darkc fixed flex justify-center items-center text-md md:text-2xl font-black tracking-wide uppercase">
               FULL PROFESSIONAL PROJECTS
             </h1>
-            <table className="w-full text-left text-xs font-light tracking-widest table-auto relative">
+            <table className="w-full z-0 text-left text-xs font-light tracking-widest table-auto relative mt-10">
               <thead className=""></thead>
               {projects.content.map((c: any) => {
                 return (
