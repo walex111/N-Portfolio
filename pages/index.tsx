@@ -162,7 +162,7 @@ const Home: NextPage = ({}) => {
                       <div className="w-32 h-32">
                         <Circle
                           classname={
-                            "motion-safe:animate-pulse stroke-darkc dark:stroke-lightc"
+                            "motion-safe:animate-pulse stroke-cBlue dark:stroke-pBlue"
                           }
                         />
                       </div>
@@ -170,14 +170,14 @@ const Home: NextPage = ({}) => {
                         <ElipseAnimation
                           width="135"
                           height="135"
-                          classname={"stroke-darkc dark:stroke-lightc"}
+                          classname={"stroke-cBlue dark:stroke-pBlue"}
                         />
                       </div>
                       <div className="block md:hidden">
                         <ElipseAnimation
                           width="135"
                           height="135"
-                          classname={"stroke-darkc dark:stroke-lightc"}
+                          classname={"stroke-cBlue dark:stroke-pBlue"}
                         />
                       </div>
                     </div>
@@ -185,14 +185,14 @@ const Home: NextPage = ({}) => {
                       <div className="w-32 h-32">
                         <Circle
                           classname={
-                            "motion-safe:animate-pulse stroke-darkc dark:stroke-lightc"
+                            "motion-safe:animate-pulse stroke-cBlue dark:stroke-pBlue"
                           }
                         />
                       </div>
                       <div className="w-32 h-32">
                         <Circle
                           classname={
-                            "motion-safe:animate-pulse stroke-darkc dark:stroke-lightc"
+                            "motion-safe:animate-pulse stroke-cBlue dark:stroke-pBlue"
                           }
                         />
                       </div>

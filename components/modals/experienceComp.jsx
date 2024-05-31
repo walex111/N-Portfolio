@@ -11,6 +11,26 @@ const ExperienceComp = () => {
                         title: "Experience",
                         content: [
                             {
+                                duration: "SEP 2023 – Date",
+                                wTitle: "Web Developer - Freelance / Contract work",
+                                mContent: (
+                                    <>
+                                        <p>
+                                            Delivering high-quality, robust production code for a diverse
+                                            array of projects for clients while adopting best practices,nurturing professional growth and enhancing team efficacy in delivering top-tier software solutions.
+                                        </p>
+                                    </>
+                                ),
+                                contentLang: [
+                                    "Next JS",
+                                    "Tailwind CSS",
+                                    "Javascript",
+                                    "Typescript",
+                                    "Node JS",
+                                    "AWS / Firebase",
+                                ],
+                            },
+                            {
                                 duration: "NOV 2021 – JUN 2023",
                                 wTitle: "Web Developer - Placewise Group",
                                 compantSite: "https://www.placewise.com/",
@@ -62,19 +82,13 @@ const ExperienceComp = () => {
                             },
                             {
                                 duration: "JAN 2019 – MAR 2019",
-                                wTitle: "Dev Apprenticeship - Techtonic",
-                                compantSite: "https://www.linkedin.com/school/techtonic-apprenticeship",
+                                wTitle: "Junior Front End Developer - Solar City",
+                                compantSite: "http://www.solarcity.com/",
                                 mContent: (
                                     <>
                                         <p>
-                                            Successfully completed a rigorous full stack web developer
-                                            apprenticeship program, mastering skills in front-end
-                                            technologies like HTML, CSS, JavaScript, and responsive
-                                            web design, as well as back-end technologies such as
-                                            Node.js and Express. Collaborated with experienced mentors
-                                            to build complex web applications, fostering in-depth
-                                            problem-solving skills and gaining expertise in coding
-                                            best practices.
+                                            Actively participated in agile development cycles,contributing to a collaborative learning environment while engaging in rigorous code review and adopted bestpractices,nurturingprofessionalgrowth
+                                            while enhancing team efficacy in delivering top-tier software solutions.
                                         </p>
                                     </>
                                 ),
@@ -88,61 +102,7 @@ const ExperienceComp = () => {
                                     "Python",
                                 ],
                             },
-                            {
-                                duration: "JAN 2017 – FEB 2018",
-                                wTitle: "Web Developer - Freelance work",
-                                mContent: (
-                                    <>
-                                        <div className="px-5 md:px-10">
-                                            <ul className="list-decimal space-y-12">
-                                                <li>
-                                                    <Link href="https://www.audreybakes.com/" passHref>
-                                                        <a
-                                                            className="flex space-x-1 text-cBlue dark:text-pBlue hover:underline underline-offset-2"
-                                                            target="_blank"
-                                                        >
-                                                            Local Business Website for a Bakery (updated)
-                                                            <LinkIcon classname="w-3 ml-1" />
-                                                            <p>{" "}:</p>
-                                                        </a>
-                                                    </Link>
 
-                                                    <ul className="list-disc space-y-2 mt-2">
-                                                        <li  ><span className="font-bold ">Description</span>: Develop a responsive website for a bakery and coffee shop in Long
-                                                            Island. Include features like an interactive menu, online ordering, and integration
-                                                            with social media for promotions.</li>
-                                                        <li  ><span className="font-bold ">Technologies Used</span>: HTML, SCSS, JavaScript, Node.js, MongoDB (for order
-                                                            management), Google Maps API (for location).</li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <div className="text-cBlue dark:text-pBlue">
-                                                        Political Campaign Website for Suffolk Council Candidate (deactivated):
-                                                    </div>
-                                                    <ul className="list-disc space-y-2 mt-2">
-                                                        <li  ><span className="font-bold ">Description</span>: Construct a dynamic website for a Suffolk Council Candidate,
-                                                            emphasizing their vision, policies, and community involvement. Include features for
-                                                            event announcements, volunteer recruitment, and donation processing.</li>
-                                                        <li  ><span className="font-bold ">Technologies Used</span>: WordPress for content management, React for interactive
-                                                            elements, PayPal API (for donations), Google Maps API (for event locations).</li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <div className="text-cBlue dark:text-pBlue">
-                                                        Event Management App for a Cultural Festival (canceled):
-                                                    </div>
-                                                    <ul className="list-disc space-y-2 mt-2">                                                        <li  ><span className="font-bold ">Description</span>: Design and build an app for managing schedules, ticket sales, and artist
-                                                        information for a local cultural festival in Holbrok, NY. Ensure a user-friendly
-                                                        interface for both organizers and attendees.</li>
-                                                        <li  ><span className="font-bold ">Technologies Used</span>: React Native, Firebase (for real-time updates), Stripe API (for
-                                                            ticket sales).</li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </>
-                                ),
-                            },
                         ],
                     },
                 }}

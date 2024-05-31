@@ -13,7 +13,7 @@
   },
   "scroll-1": {
     "Heading": "SAMSON OKETUNMBI",
-    "Subheading": "FRONT END WEB DEVELOPER",
+    "Subheading": "WEB DEVELOPER",
     "paragrapg": "I build apps for the web."
   },
   "scroll-2": {
@@ -41,6 +41,19 @@
       ]
     },
     "exp-2": {
+      "duration": "NOV 2021 – JUN 2023",
+      "company": "WEB DEVELOPER - PLACEWISE GROUP",
+      "paragraph": "Deliver high-quality, robust production code for a diverse array of projects for clients including Centennial properties, and more. Providing camaraderie within development department through close collaboration, knowledge sharing.",
+      "projectLang": [
+        "Next JS",
+        "Tailwind CSS",
+        "Javascript",
+        "Typescript",
+        "GraphQL",
+        "PHP"
+      ]
+    },
+    "exp-3": {
       "duration": "MAR 2019 – OCT 2021",
       "company": "FRONT END DEVELOPER - ETHIX INCORPORATION",
       "paragraph": "Developed, maintained, and shipped production code of a start-up e-commerce websites, employing a wide range of modern front-end technologies and practices i.e A/B testing and Image Optimization to deliver engaging user experiences, streamline navigation, and optimize performance focusing on 100% code re-use + compositionFlexible tree component.",
@@ -54,7 +67,7 @@
         "Firebase"
       ]
     },
-    "exp-3": {
+    "exp-4": {
       "duration": "MAR 2019 – OCT 2021",
       "company": "DEV APPRENTICESHIP - TECHTONIC",
       "paragraph": "Successfully completed a rigorous full stack web developer apprenticeship program, mastering skills in front-end technologies like HTML, CSS, JavaScript, and responsive web design, as well as back-end technologies such as Node.js and Express. Collaborated with experienced mentors to build complex web applications, fostering in-depth problem-solving skills and gaining expertise in coding best practices.",
@@ -68,7 +81,7 @@
         "CSS"
       ]
     },
-    "exp-4": {
+    "exp-5": {
       "duration": "MAR 2019 – OCT 2021",
       "company": "DEV APPRENTICESHIP - TECHTONIC",
       "paragraph": "Successfully completed a rigorous full stack web developer apprenticeship program, mastering skills in front-end technologies like HTML, CSS, JavaScript, and responsive web design, as well as back-end technologies such as Node.js and Express. Collaborated with experienced mentors to build complex web applications, fostering in-depth problem-solving skills and gaining expertise in coding best practices.",
