@@ -12,12 +12,13 @@ const ExperienceComp = () => {
                         content: [
                             {
                                 duration: "SEP 2023 – Date",
-                                wTitle: "Web Developer - Freelance / Contract work",
+                                wTitle: "Full Stack Developer - Naver Corp",
+                                compantSite: "https://www.naver.com/",
                                 mContent: (
                                     <>
                                         <p>
                                             Delivering high-quality, robust production code for a diverse
-                                            array of projects for clients while adopting best practices,nurturing professional growth and enhancing team efficacy in delivering top-tier software solutions.
+                                            array of projects for clients while adopting best practices,nurturing professional growth and enhancing team efficacy in delivering top-tier software solutions. Also Optimizing server-side rendering in Next.js to improve SEO and accelerate first-page load times, while contributing to a cloud-based architecture using Docker and AWS to enhance scalability and resource management.
                                         </p>
                                     </>
                                 ),
@@ -32,7 +33,7 @@ const ExperienceComp = () => {
                             },
                             {
                                 duration: "NOV 2021 – JUN 2023",
-                                wTitle: "Web Developer - Placewise Group",
+                                wTitle: "Front-End Developer - Placewise Group",
                                 compantSite: "https://www.placewise.com/",
                                 mContent: (
                                     <>
@@ -81,13 +82,13 @@ const ExperienceComp = () => {
                                 ],
                             },
                             {
-                                duration: "JAN 2019 – MAR 2019",
-                                wTitle: "Junior Front End Developer - Solar City",
-                                compantSite: "http://www.solarcity.com/",
+                                duration: "FEB 2018 – FEB 2019",
+                                wTitle: "Web Developer Internship - Naver Corp",
+                                compantSite: "https://www.naver.com/",
                                 mContent: (
                                     <>
                                         <p>
-                                            Actively participated in agile development cycles,contributing to a collaborative learning environment while engaging in rigorous code review and adopted bestpractices,nurturingprofessionalgrowth
+                                            Actively participated in agile development cycles, contributing to a collaborative learning environment while engaging in rigorous code review and adopted best practices, nurturing professional growth
                                             while enhancing team efficacy in delivering top-tier software solutions.
                                         </p>
                                     </>

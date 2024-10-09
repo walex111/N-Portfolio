@@ -11,6 +11,30 @@ const ProjectsFullM = () => {
                                 projects: {
                                     p1: [
                                         {
+                                            year: "2023",
+                                            project: <p>Naver Corp  |  <span className="font-cinzel font-extrabold">naver.com</span></p>,
+                                            link: "naver.com",
+                                            linkURL: "https://www.naver.com/"
+                                        },
+                                    ],
+                                },
+                            },
+                            {
+                                projects: {
+                                    p1: [
+                                        {
+                                            year: "2023",
+                                            project: <p>Naver Corp  |  <span className="font-cinzel font-extrabold">naver.com</span></p>,
+                                            link: "naver.com",
+                                            linkURL: "https://www.naver.com/"
+                                        },
+                                    ],
+                                },
+                            },
+                            {
+                                projects: {
+                                    p1: [
+                                        {
                                             year: "2022",
                                             project: <p>Balfin Group Real Estate  |  <span className="font-cinzel font-extrabold">Placewise Group</span></p>,
                                             link: "teg.al",

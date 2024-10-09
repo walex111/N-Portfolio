@@ -17,10 +17,13 @@ const ProjectsFullMTemplate = ({ projectsContent }: any) => {
               <thead className=""></thead>
               {projects.content.map((c: any) => {
                 return (
-                  <tbody>
+                  <tbody key={c}>
                     {c.projects.p1.map((p: any) => {
                       return (
-                        <tr className="w-full border-b dark:border-lightc border-darkc dark:border-opacity-10 border-opacity-40">
+                        <tr
+                          key={p.project}
+                          className="w-full border-b dark:border-lightc border-darkc dark:border-opacity-10 border-opacity-40"
+                        >
                           <td className="px-6 py-4">{p.year}</td>
                           <td>
                             <div className="flex md:hidden pr-6">
