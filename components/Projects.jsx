@@ -82,7 +82,7 @@ const Projects = () => {
                                 image: "/images/Airbnb-clone.png",
                                 links: {
                                     fullCode: "View Full Code",
-                                    fullCodeLink: "https://airbnb-clone-7a31b.web.app/",
+                                    fullCodeLink: "https://phenomenal-swan-e92035.netlify.app/",
                                 },
                                 projectType: "AIRBNB CLONE",
                                 projectDes: (
@@ -111,7 +111,7 @@ const Projects = () => {
                                 links: {
                                     fullCode: "View Full Code",
                                     fullCodeLink:
-                                        "https://dazzling-mirzakhani-5e90c2.netlify.app/",
+                                        "https://bucolic-cannoli-78f42e.netlify.app/",
                                 },
                                 projectType: "VIRTUAL KEYBOARD",
                                 projectDes: (
@@ -132,7 +132,7 @@ const Projects = () => {
                                 image: "/images/amexp.png",
                                 links: {
                                     fullCode: "View Full Code",
-                                    fullCodeLink: "https://elated-nobel-30e1fb.netlify.app/",
+                                    fullCodeLink: "https://soft-salmiakki-68ab57.netlify.app/",
                                 },
                                 projectType: "AMAZING EXPECTATION",
                                 projectDes: (
